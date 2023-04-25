@@ -1,9 +1,13 @@
-import { ImageSource, Sound, Resource, Loader } from 'excalibur'
-import fishImage from '../images/fish.png'
+import { ImageSource, Sound, Resource, Loader } from "excalibur";
+import fishImage from "./fish.png";
+import duckImage from "./duck.png";
+import seaImage from "./sea.png";
 
 const Resources = {
-    Fish: new ImageSource(fishImage)
-}
-const ResourceLoader = new Loader([Resources.Fish])
+  Fish: new ImageSource(fishImage),
+  Duck: new ImageSource(duckImage),
+  Sea: new ImageSource(seaImage)
+};
+const ResourceLoader = new Loader([Resources.Fish, Resources.Duck, Resources.Sea])
 
-export { Resources, ResourceLoader }
+export { Resources, ResourceLoader };
